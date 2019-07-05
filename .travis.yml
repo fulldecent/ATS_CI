@@ -1,5 +1,6 @@
 language: java
 jdk: oraclejdk12
+install: mvn clean install
 script: mvn clean verify
 
 
