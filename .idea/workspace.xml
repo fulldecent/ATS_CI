@@ -34,8 +34,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="71" />
-    <option name="y" value="25" />
+    <option name="x" value="2351" />
+    <option name="y" value="36" />
     <option name="width" value="1657" />
     <option name="height" value="943" />
   </component>
@@ -88,16 +88,15 @@
       <option name="presentableId" value="Default" />
       <updated>1562339452356</updated>
       <workItem from="1562339458339" duration="804000" />
-      <workItem from="1562341418883" duration="323000" />
+      <workItem from="1562341418883" duration="961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1127000" />
+    <option name="totallyTimeSpent" value="1765000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="25" width="1657" height="943" extended-state="0" />
-    <editor active="true" />
+    <frame x="2351" y="36" width="1657" height="943" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17008069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

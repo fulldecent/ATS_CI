@@ -1,7 +1,8 @@
+  
 language: java
 jdk: openjdk10
 install: true
-script: ./mvnw initialize clean install verify
+script: ./mvnw initialize && ./mvnw clean install verify
 cache:
- directories:
- - $HOME/.m2
+  directories:
+    - $HOME/.m2
