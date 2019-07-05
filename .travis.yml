@@ -1,6 +1,6 @@
 language: java
 jdk: oraclejdk12
-install: mvn clean install
+install: mvn install -Djacoco.skip  -Dmaven.javadoc.skip=true -B -V
 script: mvn clean verify
 
 
