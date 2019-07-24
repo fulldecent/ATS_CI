@@ -99,6 +99,21 @@ public class ATSTokenContract {
     }
 
     @Callable
+    public static byte[] getMagicAddress(Address operator) {
+
+        //Should not assign token holder itself to be the operator. Quickly revert the tx to save energy.
+        Blockchain.require(!Blockchain.getCaller().equals(operator));
+
+        byte[] operatorAndTokenHolder = AionBuffer.allocate(Address.LENGTH * 2)
+                                                  .putAddress(operator).putAddress(Blockchain.getCaller())
+                                                  .getArray();
+
+        return Blockchain.blake2b(operatorAndTokenHolder);
+    }
+
+
+
+    @Callable
     public static void revokeOperator(Address operator) {
 
         if (!Blockchain.getCaller().equals(operator)) {
