@@ -172,7 +172,7 @@ return new String(hexChars);
                         .encodeOneAddress(deployer)
                         .toBytes());
         Boolean res = (boolean) result.getDecodedReturnData();
-        Assert.assertTrue(res);
+        Assert.assertFalse(res);
     }
 
 }
